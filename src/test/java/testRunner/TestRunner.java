@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 					//features= {".//Features/"},
 					//features= {".//Features/Login.feature"},
 					//features= {".//Features/LoginDDTExcel.feature"},
-					features= {".//Features/Login.feature",".//Features/Registration.feature"},
+					features= {"C:\\Eclipse Projects\\Interview\\FebruaryPracticeAutomationCucumber\\Features"},
 					//features= {"@target/rerun.txt"},
 					glue="stepDefinitions",
 					plugin= {"pretty", "html:reports/myreport.html", 
@@ -18,7 +18,7 @@ import io.cucumber.junit.CucumberOptions;
 							  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 							},
 							
-					dryRun=false,    // checks mapping between scenario steps and step definition methods
+					dryRun=true,    // checks mapping between scenario steps and step definition methods
 					monochrome=true,    // to avoid junk characters in output
 					publish=true, // to publish report in cucumber server
 					tags="@sanity"  // this will execute scenarios tagged with @sanity
